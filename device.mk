@@ -139,9 +139,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+<<<<<<< HEAD
 # Google Photos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+=======
+# GoogleCamera
+$(call inherit-product-if-exists, vendor/GoogleCamera/GoogleCamera.mk)
+>>>>>>> e73d08ce... GoogleCamera: move to sperate repo
 
 # Component overrides
 PRODUCT_COPY_FILES += \
