@@ -52,6 +52,8 @@
 
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffffff</color>
+    <color name="config_fodColorBackground">#00000000</color>
+
 
     <!-- Burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
